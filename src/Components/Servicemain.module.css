@@ -1,0 +1,664 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.submain {
+    width: 80%;
+    height: auto;
+    padding: 40px 0px 80px 0px;
+}
+
+.servicemain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.serviceheading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.servicechild {
+    width: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 15px;
+}
+
+.serviceh {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+.checkimg {
+    width: 60px;
+    height: 56px;
+
+    background-color: #2867b3;
+    color: #fff;
+    display: flex;
+    padding: 1px 0px;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+
+}
+
+
+.checkimg:hover {
+    background-color: #51c7e1;
+}
+
+.checkimg h2 {
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.serviceheading h1 {
+    width: 80%;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.service {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.service h5,
+.commercial h5,
+.Equipments h5,
+.Accessories h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin: 0px;
+}
+
+.service p,
+.commercial p,
+.Equipments p,
+.Accessories p {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    flex-wrap: wrap;
+    color: #000;
+    font-size: 13px;
+    line-height: 30px;
+    margin: 5px;
+}
+
+.service:hover,
+.commercial:hover,
+.Equipments:hover,
+.Accessories:hover {
+
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+.provide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.35s;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+
+}
+
+.providechild {
+    width: 100%;
+    padding: 40px 0px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    color: #fff;
+
+}
+
+
+.provideImg {
+    width: 22px;
+    height: auto;
+    object-fit: contain;
+
+}
+
+.provideImg img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.provideheading {
+    width: 70%;
+}
+
+.provideheading h1 {
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+.provide:hover {
+    box-shadow: rgb(140, 205, 255) 0px 5px 15px;
+    transition: all 0.35s;
+}
+
+
+
+.provideheading p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Merriweather';
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-weight: 300;
+    line-height: 25px;
+
+}
+
+
+
+@media (max-width: 800px) {
+
+
+    .providechild {
+        width: 100%;
+        transition: all 0.35s;
+
+    }
+
+
+
+    .serviceheading h1 {
+        width: 81%;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+        font-size: 23px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .checkimg {
+        width: 50px;
+        height: 46px;
+        background-color: #51c7e1;
+        color: #fff;
+        display: flex;
+        padding: 1px 0px;
+        align-items: center;
+        border-radius: 50px;
+        justify-content: center;
+
+    }
+
+    .checkimg h2 {
+        font-size: 17px;
+    }
+
+    .checkimg:hover {
+        background-color: #2867b3;
+    }
+
+
+    .service h5,
+    .commercial h5,
+    .Equipments h5,
+    .Accessories h5 {
+        font-size: 17px;
+        font-weight: 700;
+        color: #333;
+        margin: 0px;
+    }
+
+    .service p,
+    .commercial p,
+    .Equipments p,
+    .Accessories p {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        flex-wrap: wrap;
+        color: #000;
+        font-size: 11px;
+        color: #555;
+        line-height: 24px;
+        margin: 5px;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 640px) {
+
+
+    .provideheading h1 {
+        font-size: 25px;
+        font-family: 'Playfair Display', serif;
+        color: #000;
+        font-weight: 700;
+        color: #fff;
+
+    }
+
+
+
+    .serviceheading h1 {
+        width: 97%;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+        font-size: 23px;
+        letter-spacing: 1px;
+        text-align: center;
+
+    }
+
+    .provideheading p {
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        font-family: 'Merriweather';
+        flex-wrap: wrap;
+        margin: 20px 0px;
+        cursor: pointer;
+        line-height: 23px;
+        font-weight: 300;
+
+    }
+
+    .checkimg {
+        width: 50px;
+        height: 46px;
+        background-color: #51c7e1;
+        color: #fff;
+        display: flex;
+        padding: 1px 0px;
+        align-items: center;
+        border-radius: 50px;
+        justify-content: center;
+
+    }
+
+    .checkimg h2 {
+        font-size: 16px;
+    }
+
+    .checkimg:hover {
+        background-color: #2867b3;
+    }
+
+    .service h5,
+    .commercial h5,
+    .Equipments h5,
+    .Accessories h5 {
+        font-size: 15px;
+        font-weight: 700;
+        color: #333;
+        margin: 0px;
+    }
+
+    .service p,
+    .commercial p,
+    .Equipments p,
+    .Accessories p {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        flex-wrap: wrap;
+        color: #000;
+        font-size: 10px;
+        color: #555;
+        line-height: 22px;
+        margin: 5px;
+    }
+
+
+
+
+}
+
+
+
+
+
+@media (max-width: 540px) {
+
+
+
+    .submain {
+        width: 80%;
+        height: auto;
+        padding: 70px 0px;
+    }
+
+
+
+    .serviceheading h1 {
+        width: 100%;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+
+    .provideheading h1 {
+        font-size: 24px;
+        font-family: 'Playfair Display', serif;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 0px;
+
+    }
+
+
+
+    .provideImg {
+        width: 20px;
+        height: auto;
+    }
+
+    .provideImg img {
+
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .checkimg {
+        width: 50px;
+        height: 46px;
+        /* height: auto; */
+        background-color: #51c7e1;
+        color: #fff;
+        display: flex;
+        padding: 1px 0px;
+        align-items: center;
+        border-radius: 50px;
+        justify-content: center;
+
+    }
+
+    .checkimg h2 {
+        font-size: 16px;
+    }
+
+    .checkimg:hover {
+        background-color: #2867b3;
+    }
+
+    .service {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+    }
+
+
+
+
+    .service h5,
+    .commercial h5,
+    .Equipments h5,
+    .Accessories h5 {
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+        margin: 0px;
+    }
+
+    .service p,
+    .commercial p,
+    .Equipments p,
+    .Accessories p {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        flex-wrap: wrap;
+        color: #000;
+        font-size: 10px;
+        color: #555;
+        line-height: 21px;
+        margin: 5px;
+    }
+
+
+
+
+
+
+    .providechild p {
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 20px 0px;
+        cursor: pointer;
+        font-family: 'Merriweather';
+    }
+
+
+
+
+
+}
+
+
+
+
+
+@media (max-width: 440px) {
+
+    .serviceheading h1 {
+        width: 100%;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-align: center;
+
+    }
+
+
+
+
+    .provideheading h1 {
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+        color: #fff;
+        font-weight: 800;
+        margin-bottom: 0px;
+        font-size: 35px;
+
+    }
+
+
+    .checkimg {
+        width: 50px;
+        height: 43px;
+        background-color: #51c7e1;
+        color: #fff;
+        display: flex;
+        padding: 1px 0px;
+        align-items: center;
+        border-radius: 50px;
+        justify-content: center;
+
+    }
+
+    .checkimg h2 {
+        font-size: 14px;
+    }
+
+    .checkimg:hover {
+        background-color: #2867b3;
+    }
+
+    .service {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+    }
+
+    .service h5,
+    .commercial h5,
+    .Equipments h5,
+    .Accessories h5 {
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+        margin: 0px;
+    }
+
+    .service p,
+    .commercial p,
+    .Equipments p,
+    .Accessories p {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        flex-wrap: wrap;
+        color: #000;
+        font-size: 9px;
+        color: #555;
+        line-height: 21px;
+        margin: 5px;
+    }
+
+    .provideheading p {
+        color: #fff;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Merriweather';
+        flex-wrap: wrap;
+        margin: 20px 0px;
+        cursor: pointer;
+        font-weight: 300;
+        line-height: 23px;
+
+    }
+
+    .provideImg {
+        width: 17px;
+        width: 17px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .provideImg img {
+
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+
+
+
+
+    .providechild {
+        width: 100%;
+
+        padding: 10px 0px;
+
+        transition: all 0.35s;
+
+    }
+
+
+}
+
+
+
+@media (max-width: 340px) {
+
+
+    .checkimg {
+        width: 50px;
+        height: 43px;
+        background-color: #51c7e1;
+        color: #fff;
+        display: flex;
+        padding: 1px 0px;
+        align-items: center;
+        border-radius: 50px;
+        justify-content: center;
+
+    }
+
+    .checkimg h2 {
+        font-size: 14px;
+    }
+
+    .checkimg:hover {
+        background-color: #2867b3;
+    }
+
+    .providechild p {
+        color: #fff;
+        font-size: 12=0px;
+        text-align: center;
+        font-family: 'Merriweather';
+        margin: 20px 0px;
+        cursor: pointer;
+        line-height: 23px;
+    }
+
+}

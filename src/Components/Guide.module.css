@@ -1,0 +1,494 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1e23;
+    padding: 100px 0px;
+}
+
+.submain {
+    width: 80%;
+    height: auto;
+}
+
+.buyerheading {
+    width: 70%;
+    color: #fff;
+}
+
+.buyerheading p {
+    color: #51c7e1;
+
+    font-family: 'Fjalla One';
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.buyerheading h1 {
+    font-size: 60px;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.buyerchild {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.buyersubchild {
+
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  #51c7e1;
+    
+
+}
+
+.buyersubchild::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 3px;
+    background-color: #51c7e1;
+
+
+}
+
+.guidetxt {
+    width: 93%;
+    color: #fff;
+    line-height: 35px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.guidetxt P {
+    color: #c0bfc1;
+    font-family: 'Playfair Display', serif;
+}
+
+.guidevideo1 {
+    width: 100%;
+}
+
+
+.guidevideo2 {
+    width: 100%;
+
+}
+
+.img1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img1 img {
+
+    width: 87%;
+    height: 100%;
+    min-height: 370px;
+    object-fit: cover;
+}
+
+.imgicon {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgicon:hover {
+    background-color: #2967b3;
+}
+
+.imgicon .imgicon1 {
+    width: 48%;
+    height: auto;
+}
+
+.img1child {
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    top: 28%;
+    left: 27%;
+}
+
+.img1child p {
+    font-size: 24px;
+    font-family: 'Fjalla One';
+    color: #fff;
+    letter-spacing: 3px;
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    position: relative;
+    /* background: #fff; */
+    /* padding: 2px; */
+    border-radius: 2px;
+    max-width: 90%;
+    width: 830px;
+    height: 350px;
+    top: 10%;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoPlayer {
+    width: 100%;
+    border-radius: 1px solid #fff;
+}
+
+.closeButton {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    background-color: #1a1e2310;
+    border: none;
+}
+
+.closeButton:hover {
+    color: rgb(22, 134, 219);
+}
+
+
+.newClass {
+    margin-top: -50px;
+}
+
+.additionalClass {
+    z-index: 1000;
+}
+
+.guidebtn {
+    width: 170px;
+    height: 70px;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px;
+    font-family: 'Fjalla One';
+    display: none;
+    background-color: #2967b3;
+
+}
+
+
+
+.guidebtn:hover{
+    background-color: #25b4cf;
+}
+
+@media (max-width: 890px) {
+
+
+
+    .buyerchild {
+        width: 74%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .buyersubchild {
+
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .buyersubchild::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 70px;
+        height: 2px;
+        background-color: #2967b3;
+
+    }
+
+    .guidevideo2 {
+        margin-top: 40px;
+    }
+
+}
+
+
+
+@media (max-width: 786px) {
+
+
+    .img1 {
+        width: 100%;
+        height: 210px;
+    }
+
+
+
+
+    .buyerheading h1 {
+        font-size: 30px;
+
+    }
+
+    .buyerchild {
+        width: 80%;
+    }
+
+    .buyersubchild p {
+        font-size: 14px;
+
+    }
+
+
+
+    .img1 img {
+
+        width: 100%;
+        height: 100%;
+        min-height: 200px !important;
+        object-fit: none;
+    }
+
+    .newClass {
+        margin-top: 30px;
+    }
+
+
+    .guidevideo2 {
+
+        margin-top: 10px;
+    }
+
+
+    .imgicon {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .img1child {
+        width: 60%;
+        top: 26%;
+        left: 20%;
+
+    }
+
+
+    .img1child p {
+        font-size: 17px;
+    }
+
+    .guidetxt {
+        width: 96%;
+        color: #fff;
+        line-height: 25px;
+        text-align: start;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .guidebtn {
+        display: block;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media (max-width: 546px) {
+
+    .main {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1a1e23;
+        padding: 50px 0px;
+    }
+
+
+    .submain {
+        width: 70%;
+        height: auto;
+    }
+
+
+    .buyerheading {
+        width: 100%;
+        color: #fff;
+    }
+
+
+    .buyerheading h1 {
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0px;
+        font-family: 'Playfair Display', serif;
+    }
+
+
+    .buyerchild {
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        position: relative;
+    }
+
+    .buyersubchild {
+
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .guidetxt {
+        width: 100%;
+    }
+
+    .guidetxt P {
+        font-size: 15px;
+        line-height: 20px;
+        color: #c0bfc1;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .buyersubchild P {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        padding-left: 20px;
+        letter-spacing: 1px;
+    }
+
+
+    .buyersubchild::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        width: 60px;
+        height: 3px;
+        background-color: #51c7e1;
+
+    }
+
+
+    .img1child {
+        width: 79%;
+        left: 10%;
+        top: 18%;
+
+    }
+
+}
+
+
+@media (max-width: 340px) {
+
+
+    .submain {
+        width: 85%;
+        height: auto;
+    }
+
+    .buyerchild {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .buyersubchild {
+
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    .buyersubchild p {
+        font-size: 12px;
+    }
+
+    .buyersubchild::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        width: 60px;
+        height: 3px;
+        background-color: #2967b3;
+
+    }
+
+
+}

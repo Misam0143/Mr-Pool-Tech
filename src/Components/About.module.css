@@ -1,0 +1,816 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.submain {
+    width: 99%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 60px 0px;
+}
+
+.submain {
+    color: #000;
+}
+
+.aboutimg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.aboutimg img {
+    width: 53%;
+    height: auto;
+    object-fit: contain;
+}
+
+.abouttxt {
+    width: 66%;
+}
+
+.abouttxt p {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    margin-top: 30px;
+    line-height: 27px;
+    font-size: 14px;
+
+}
+
+.aboutheading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 50px;
+}
+
+
+.subheading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.headicon {
+    width: 25px;
+    height: auto;
+}
+
+.headicon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.subheading h1 {
+
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    margin: 0px;
+
+}
+
+
+
+.abouttxt h1 {
+    margin-top: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+
+}
+
+.abouttxt h1 img {
+    width: 6%;
+    margin: 5px;
+}
+
+.mission {
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    object-fit: cover;
+}
+
+
+
+.missionchild {
+    width: 100%;
+
+}
+
+.missionsub {
+    width: 58%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.missionicon {
+    width: 56px;
+    height: auto;
+    margin-top: 15px;
+    object-fit: contain;
+
+}
+
+.missionicon img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: contain;
+}
+
+.missionsub h1 {
+
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.mission p {
+    font-family: 'Merriweather', serif;
+    color: #000;
+    font-weight: 300;
+    margin-top: 20px;
+    line-height: 27px;
+    font-size: 14px;
+
+}
+
+
+.missionimg {
+    width: 75%;
+    height: 100%;
+    margin-top: 50px;
+    object-fit: cover;
+
+}
+
+.missionimg img {
+    width: 100%;
+    height: auto;
+}
+
+
+.provide {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.35s;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+
+}
+
+.providechild {
+    width: 100%;
+    padding: 40px 0px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    color: #fff;
+
+}
+
+
+.provideImg {
+    width: 22px;
+    height: auto;
+    object-fit: contain;
+
+}
+
+.provideImg img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.provideheading {
+    width: 75%;
+}
+
+.provideheading h1 {
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+
+.provide:hover {
+    box-shadow: rgb(140, 205, 255) 0px 5px 15px;
+    transition: all 0.35s;
+}
+
+
+
+.provideheading p {
+    color: #fff;
+    font-size: 14px;
+    text-align: start;
+    font-family: 'Merriweather';
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-weight: 300;
+    line-height: 25px;
+
+}
+
+
+@media (max-width: 1140px) {
+
+
+    .missionsub {
+        width: 71%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .missionicon {
+        width: 40px;
+        height: auto;
+        margin-top: 15px;
+        object-fit: contain;
+
+    }
+
+    .missionicon img {
+        width: 100% !important;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .missionsub h1 {
+
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        color: #000;
+        font-size: 35px;
+        margin: 0px;
+    }
+
+    .mission p {
+        font-family: 'Merriweather', serif;
+        color: #000;
+        font-weight: 300;
+        margin-top: 20px;
+        line-height: 27px;
+
+    }
+
+
+
+
+}
+
+
+
+@media (max-width: 1074px) {
+
+
+
+    .abouttxt {
+        width: 95%;
+    }
+
+
+
+    .aboutimg img {
+        width: 82%;
+        height: auto;
+    }
+
+
+    .abouttxt h1 {
+        margin-top: 25px;
+        font-weight: 600;
+        /* font-style: italic; */
+        font-family: 'Playfair Display', serif;
+        color: #000;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        gap: 5px;
+
+    }
+
+    .abouttxt h1 {
+        margin-top: 25px;
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        color: #000;
+        font-size: 24px;
+
+    }
+
+
+    .abouttxt p {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        color: #000;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 31px;
+    }
+
+
+
+
+
+
+    .mission h1 {
+
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        color: #000;
+        font-size: 35px;
+
+
+    }
+
+    .mission p {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        color: #000;
+        margin-top: 20px;
+        line-height: 25px;
+        font-size: 13px;
+
+    }
+
+
+}
+
+
+
+
+@media (max-width: 840px) {
+
+
+    .abouttxt p {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+
+        color: #000;
+        margin-top: 20px;
+        font-size: 13px;
+        line-height: 27px;
+    }
+
+    .missionsub {
+        width: 99%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .missionicon {
+        width: 30px;
+        height: auto;
+        margin-top: 15px;
+        object-fit: contain;
+
+    }
+
+    .missionicon img {
+        width: 100% !important;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .missionsub h1 {
+
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        color: #000;
+        font-size: 25px !important;
+        margin: 0px;
+    }
+
+    .mission p {
+        font-family: 'Merriweather', serif;
+        color: #000;
+        font-weight: 300;
+        margin-top: 20px;
+
+    }
+
+
+    .provide {
+        width: 88% !important;
+
+    }
+
+    .provideheading h1 {
+        font-size: 29px;
+        font-family: 'Playfair Display', serif;
+        color: #000;
+        font-weight: 700;
+        color: #fff;
+
+    }
+
+
+
+    .provideheading p {
+        color: #fff;
+        font-size: 14px;
+        text-align: start;
+        font-family: 'Merriweather';
+        flex-wrap: wrap;
+        margin: 20px 0px;
+        cursor: pointer;
+        line-height: 27px;
+        font-size: 13px !important;
+
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    .submain {
+        width: 80%;
+    }
+
+    .abouttxt {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .aboutimg {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+    .abouttxt p {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        color: #000;
+        margin-top: 30px;
+        line-height: 22px;
+        text-align: start;
+        font-size: 12px !important;
+    }
+
+
+
+    .missionicon {
+        width: 25px;
+        height: auto;
+        margin-top: 5px;
+        object-fit: contain;
+
+    }
+
+    .subheading {
+        width: 90%;
+    }
+
+    .mission {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 0px;
+        object-fit: cover;
+    }
+
+
+    .mission p {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        color: #000;
+        margin-top: 30px;
+        line-height: 22px;
+        text-align: center;
+        font-size: 12px !important;
+    }
+
+
+
+
+    .missionimg {
+        width: 100% !important;
+        height: auto;
+        margin-top: 50px;
+        clip-path: none;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .missionimg img {
+
+        width: 80%;
+        height: auto;
+    }
+
+
+
+    .provideheading h1 {
+        font-size: 29px;
+        font-family: 'Playfair Display', serif;
+        color: #000;
+        font-weight: 700;
+        color: #fff;
+
+    }
+
+
+
+    .provideheading p {
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        font-family: 'Merriweather';
+        flex-wrap: wrap;
+        cursor: pointer;
+        line-height: 22px;
+        text-align: center;
+        font-size: 12px !important;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 540px) {
+
+
+
+    .submain {
+        width: 79%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0px;
+    }
+
+
+    .aboutheading h1 {
+        font-size: 23px;
+        font-weight: 600;
+        /* font-style: italic; */
+        font-family: 'Playfair Display', serif;
+        color: #000;
+
+    }
+
+    .abouttxt h1 img {
+        width: 7%;
+        margin: 5px;
+    }
+
+
+    .abouttxt p {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        margin-top: 30px;
+        line-height: 24px;
+        text-align: center;
+        color: #000;
+        font-size: 10px !important;
+    }
+
+
+
+
+    .missionicon {
+        width: 20px !important;
+        height: auto;
+        margin-top: 4px !important;
+        object-fit: contain;
+        margin-bottom: 0px !important;
+    }
+
+    .mission h1 {
+
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        color: #000;
+        font-size: 20px;
+
+    }
+
+    .missionicon {
+        width: 40px;
+        height: auto;
+        margin-top: 15px;
+        object-fit: contain;
+
+    }
+
+    .missionicon img {
+        width: 100% !important;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .missionsub h1 {
+
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        color: #000;
+        font-size: 20px !important;
+        margin: 0px;
+    }
+
+    .mission p {
+        font-family: 'Merriweather', serif;
+        color: #000;
+        font-weight: 300;
+        margin-top: 20px;
+        line-height: 22px;
+        font-size: 10px !important;
+
+    }
+
+
+
+    .provideImg {
+        width: 17px;
+        height: auto;
+        object-fit: contain;
+
+    }
+
+    .provide {
+        width: 100% !important;
+    }
+
+    .provideheading {
+        width: 92%;
+    }
+
+
+    .provideheading h1 {
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+        color: #000;
+        font-weight: 700;
+        color: #fff;
+    }
+
+
+    .provideheading p {
+        color: #fff;
+        font-size: 14px;
+        text-align: start;
+        font-family: 'Merriweather';
+        flex-wrap: wrap;
+        cursor: pointer;
+        line-height: 22px;
+        text-align: center;
+        font-size: 10px !important;
+
+
+    }
+
+
+
+
+    .providechild {
+        width: 100%;
+        padding: 40px 0px 0px 0px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: #fff;
+    }
+
+
+
+
+}
+
+
+
+
+@media (max-width: 440px) {
+
+
+    .subheading {
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+
+    .aboutheading h1 {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        color: #000;
+    }
+
+    .headicon {
+        width: 20px;
+        height: auto;
+    }
+
+    .abouttxt h1 img {
+        width: 20px !important;
+        height: 20px;
+        margin: 5px 7px;
+    }
+
+
+
+    .provideheading h1 {
+        font-size: 16px;
+        font-family: 'Playfair Display', serif;
+        color: #000;
+        font-weight: 700;
+        color: #fff;
+
+    }
+
+
+
+    .provideImg {
+        width: 14px;
+        height: auto;
+        object-fit: contain;
+
+    }
+
+    .providechild {
+        width: 100%;
+        padding: 40px 0px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: #fff;
+    }
+
+
+}

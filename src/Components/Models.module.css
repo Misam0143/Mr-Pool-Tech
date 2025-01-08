@@ -1,0 +1,274 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px 0px;
+}
+
+.submain {
+    width: 80%;
+    height: auto;
+}
+
+.modelmain {
+    width: 100%;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modelmain h1 {
+    font-size: 60px;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+}
+
+.modelchunks {
+    width: 50%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+
+.rectangle {
+    width: 65px;
+    height: 65PX;
+    text-align: center;
+}
+
+.rectangle img {
+    width: 100%;
+    height: 100%;
+}
+
+.rectangle p {
+    margin-top: 20px;
+    font-family: 'Fjalla One';
+    font-weight: 500 !important;
+    font-size: 15px;
+    color: #ccc;
+    transition: all 0.35s;
+}
+
+.rectangle p:hover {
+    color: #171717;
+}
+
+
+.olympiamain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.olympiamain h1 {
+    margin-top: 30px;
+    font-size: 38px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+
+}
+
+
+.olympiamain :nth-child(3) {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-family: 'Fjalla One';
+    color: #bdbdbd;
+}
+
+
+
+.infobtn {
+    width: 44%;
+    padding: 20px 10px;
+    border: none;
+    color: #fff;
+    font-family: 'Fjalla One';
+    font-size: 18px;
+    transition: all 0.35s;
+    margin-top: 25px;
+    background-color: #2967b3 !important;
+
+
+}
+
+.infobtn:hover {
+    background-color: #25b4cf !important;
+}
+
+
+
+
+
+
+.olympiaimg {
+    width: 100%;
+    height: auto;
+
+}
+
+.olympiaimg img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@media (max-width: 886px) {
+
+
+    .modelchunks {
+        width: 70%;
+    }
+
+
+}
+
+@media (max-width: 786px) {
+
+
+
+    .modelmain h1 {
+        font-size: 29px;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+    }
+
+
+    .olympiamain {
+        margin-top: 40px;
+    }
+
+
+    .modelchunks {
+        width: 70%;
+    }
+
+}
+
+
+
+@media (max-width: 546px) {
+
+
+    .main {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 40px 0px;
+    }
+
+    .modelmain {
+        width: 100%;
+        padding: 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .modelchunks {
+        width: 74%;
+        height: auto;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px 30px 0px;
+        gap: 60px;
+    }
+
+
+    .olympiamain h1 {
+        margin-top: 19px;
+        font-size: 28px;
+        font-weight: 400;
+        font-family: 'Playfair Display', serif;
+
+    }
+
+
+    .olympiaimg {
+        width: 94%;
+        height: auto;
+    }
+
+
+
+   
+
+    .olympiamain :nth-child(3) {
+        font-size: 13px;
+        letter-spacing: 2px;
+        margin-top: 7px;
+        font-family: 'Fjalla One';
+        color: #bdbdbd;
+    }
+
+   
+
+
+
+    .infobtn {
+        width: 33%;
+        padding: 16px 10px;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        font-family: 'Fjalla One';
+        font-size: 13px;
+        transition: all 0.35s;
+        margin-top: 25px;
+
+    }
+
+
+
+}
+
+
+
+
+@media (max-width: 340px) {
+
+
+
+    .infobtn {
+        width: 43%;
+        padding: 16px 10px;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        font-family: 'Fjalla One';
+        font-size: 11px;
+        transition: all 0.35s;
+        margin-top: 25px;
+
+    }
+}

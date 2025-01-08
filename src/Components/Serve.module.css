@@ -1,0 +1,211 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.submain {
+    width: 80%;
+    height: auto;
+    padding: 50px 0px;
+
+}
+
+.servemain {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.servemain span {
+    font-size: 26px;
+    font-style: italic;
+}
+
+.servemain h1 {
+
+    font-family: 'Playfair Display', serif;
+    font-size: 85px;
+    font-weight: 700;
+    color: #000;
+}
+
+.servemain a  {
+    width: 27%;
+    height: auto;
+    padding: 29px 15px;
+    font-size: 16px;
+    font-family: 'Fjalla One';
+    border: none;
+    color: #fff;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    transition: all 0.35s;
+    background-color: #2967b3;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+
+
+.servemain a:hover {
+
+    background-color: #25b4cf !important;
+
+
+}
+
+
+
+@media (max-width: 890px) {
+
+
+    .servemain a {
+        width: 28%;
+        height: auto;
+        padding: 29px 15px;
+        font-size: 12px;
+        font-family: 'Fjalla One';
+        border: none;
+        color: #fff;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        transition: all 0.35s;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+
+}
+
+
+@media (max-width: 786px) {
+
+
+
+    .servemain span {
+        font-size: 22px;
+        font-weight: 100;
+        font-style: italic;
+    }
+
+    .servemain h1 {
+
+        font-family: 'Playfair Display', serif;
+        font-size: 55px;
+    }
+
+
+    .servemain a {
+        width: 35%;
+        height: auto;
+        padding: 24px 15px;
+        font-size: 12px;
+        font-family: 'Fjalla One';
+        border: none;
+        color: #fff;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+
+
+
+@media (max-width: 546px) {
+
+
+    .submain {
+        width: 80%;
+        height: auto;
+        padding: 50px 0px;
+    }
+
+
+
+
+    .servemain span {
+        font-size: 17px;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    .servemain h1 {
+
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        font-weight: 700;
+        color: #000;
+    }
+
+
+    .servemain a {
+        width: 59%;
+        height: auto;
+        padding: 23px 15px;
+        font-size: 10px;
+        font-family: 'Fjalla One';
+        border: none;
+        color: #fff;
+        margin-top: 9px;
+        letter-spacing: 1px;
+        transition: all 0.35s;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+}
+
+
+@media (max-width: 340px) {
+
+
+
+    .servemain span {
+        font-size: 17px;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    .servemain h1 {
+
+        font-family: 'Playfair Display', serif;
+        font-size: 33px;
+        font-weight: 700;
+        color: #000;
+    }
+
+
+
+    .servemain button {
+        width: 70%;
+        height: auto;
+        padding: 23px 15px;
+        font-size: 10px;
+        font-family: 'Fjalla One';
+        border: none;
+        color: #fff;
+        margin-top: 9px;
+        letter-spacing: 1px;
+        transition: all 0.35s;
+
+
+    }
+
+}

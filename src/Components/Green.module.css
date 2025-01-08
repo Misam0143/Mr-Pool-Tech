@@ -1,0 +1,162 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    padding: 355px 0px 300px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    background-image: url("../assets/images//greepool.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.submain {
+    width: 100%;
+    height: auto;
+}
+
+.greenmain {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.greenchild {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.greensubchild {
+    width: 70%;
+    position: relative;
+}
+
+.greensubchild::before {
+    position: absolute;
+    top: 20px;
+    left: -85px;
+    content: '';
+    width: 70px;
+    height: 3px;
+    background-color: #25b4cf;
+
+}
+
+.greensubchild h6 {
+    font-family: 'Fjalla One';
+    color: #25b4cf;
+}
+
+.greentxt {
+    width: 49%;
+    color: #fff;
+
+}
+
+
+.greentxt h1 {
+    font-size: 70px !important;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+
+@media (max-width: 786px) {
+
+
+
+    .main {
+        width: 100%;
+        height: 100%;
+        min-height: 350px;
+        padding: 35px 180px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .greenmain {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+    .greentxt {
+        width: 80%;
+        color: #fff;
+
+    }
+
+    .greentxt h1 {
+        font-size: 48px !important;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+    }
+
+}
+
+
+
+@media (max-width: 546px) {
+
+
+
+    .main {
+        width: 100%;
+        height: 50vh;
+        padding: 155px 0px 100px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: contain;
+    }
+
+
+    .greentxt h1 {
+        font-size: 38px !important;
+    }
+
+
+
+    .greensubchild {
+        width: 40%;
+        position: relative;
+    }
+
+    .greensubchild::before {
+        position: absolute;
+        top: 16px;
+        left: -85px;
+        content: '';
+        width: 60px;
+        height: 3px;
+        background-color: #25b4cf;
+
+    }
+
+
+}
