@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom"; // Added useLocation
 import styles from "./Header.module.css";
-import { Link } from "react-router-dom";
-
 import logo from "../assets/images/logo.png";
 import BgImg1 from "../assets/images/bg-img.jpg";
 import BgImg2 from "../assets/images/bg-img2.jpg";
@@ -12,6 +11,8 @@ const Header = ({ page, descript , heroText }) => {
   const [showText, setShowText] = useState(true);
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const location = useLocation(); // Track the location
 
   const carouselItems = [
     {
@@ -51,6 +52,37 @@ const Header = ({ page, descript , heroText }) => {
     setIsMenuOpen(false);
   };
 
+
+
+  const handleLinkClick = (path) => {
+    if (location.pathname === path) {
+      // If already on the page, scroll to top with smooth animation
+      const scrollSmoothly = () => {
+        const start = window.pageYOffset;
+        const end = 0;
+        const duration = 400; // Duration for smooth scroll (increase for slower scroll)
+        const startTime = performance.now();
+  
+        const scrollAnimation = (currentTime) => {
+          const timeElapsed = currentTime - startTime;
+          const run = Math.min(timeElapsed / duration, 1); // Normalize time to 1
+          const scrollPosition = start + (end - start) * run;
+          
+          window.scrollTo(0, scrollPosition);
+  
+          if (timeElapsed < duration) {
+            requestAnimationFrame(scrollAnimation); // Continue animating
+          }
+        };
+  
+        requestAnimationFrame(scrollAnimation); // Start animation
+      };
+  
+      scrollSmoothly(); // Call the function to scroll smoothly to the top
+    }
+  };
+  
+
   return (
     <div className="container-fluid p-0 w-100 d-flex justify-content-center align-items-center">
       <div className="row w-100">
@@ -62,7 +94,7 @@ const Header = ({ page, descript , heroText }) => {
                   scrolled ? styles.scrolled : ""
                 }`}
               >
-                <Link to="/" className="nav-link">
+                <Link to="/" className="nav-link" onClick={() => handleLinkClick("/")}>
                   <div className={styles.headerLogo}>
                     <img src={logo} alt="Logo" />
                   </div>
@@ -79,38 +111,48 @@ const Header = ({ page, descript , heroText }) => {
 
                   <ul>
                     <li className={page === "home" ? styles.headerActive : ""}>
-                      <Link to="/" className="nav-link">
+                      <Link
+                        to="/"
+                        className="nav-link"
+                        onClick={() => handleLinkClick("/")}
+                      >
                         HOME
                       </Link>
                     </li>
                     <li className={page === "about" ? styles.headerActive : ""}>
-                      <Link to="/AboutUs" className="nav-link">
+                      <Link
+                        to="/AboutUs"
+                        className="nav-link"
+                        onClick={() => handleLinkClick("/AboutUs")}
+                      >
                         ABOUT US
                       </Link>
                     </li>
-                    <li
-                      className={
-                        page === "OurProjects" ? styles.headerActive : ""
-                      }
-                    >
-                      <Link to="/OurProjects" className="nav-link">
+                    <li className={page === "OurProjects" ? styles.headerActive : ""}>
+                      <Link
+                        to="/OurProjects"
+                        className="nav-link"
+                        onClick={() => handleLinkClick("/OurProjects")}
+                      >
                         PROJECTS
                       </Link>
                     </li>
 
-                    <li
-                      className={
-                        page === "Servicemain" ? styles.headerActive : ""
-                      }
-                    >
-                      <Link to="/Servicemain" className="nav-link">
+                    <li className={page === "Servicemain" ? styles.headerActive : ""}>
+                      <Link
+                        to="/Servicemain"
+                        className="nav-link"
+                        onClick={() => handleLinkClick("/Servicemain")}
+                      >
                         SERVICES
                       </Link>
                     </li>
-                    <li
-                      className={page === "Contact" ? styles.headerActive : ""}
-                    >
-                      <Link to="/ContactUs" className="nav-link">
+                    <li className={page === "Contact" ? styles.headerActive : ""}>
+                      <Link
+                        to="/ContactUs"
+                        className="nav-link"
+                        onClick={() => handleLinkClick("/ContactUs")}
+                      >
                         CONTACT US
                       </Link>
                     </li>
@@ -122,7 +164,13 @@ const Header = ({ page, descript , heroText }) => {
 
                   {isMenuOpen && (
                     <div className={styles.closeButton} onClick={closeMenu}>
-                    <img width="400" height="400" src="https://img.icons8.com/ios-filled/400/delete-sign--v1.png" alt="delete-sign--v1"/>                    </div>
+                      <img
+                        width="400"
+                        height="400"
+                        src="https://img.icons8.com/ios-filled/400/delete-sign--v1.png"
+                        alt="delete-sign--v1"
+                      />
+                    </div>
                   )}
                 </div>
 
@@ -156,9 +204,7 @@ const Header = ({ page, descript , heroText }) => {
               <div className="carousel-inner">
                 {carouselItems.map((item, index) => (
                   <div
-                    className={`carousel-item ${
-                      index === activeIndex ? "active" : ""
-                    }`}
+                    className={`carousel-item ${index === activeIndex ? "active" : ""}`}
                     key={index}
                   >
                     <img

@@ -29,6 +29,7 @@ const Services = () => {
                     <p>NEW POOLS</p>
                   </div>
                 </div>
+                           
                 
 
                 <div className={styles.sicon}>

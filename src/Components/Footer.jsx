@@ -5,6 +5,37 @@ import { Link } from "react-router-dom";
 
 // import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 
+
+
+const handleLinkClick = (path) => {
+  if (location.pathname === path) {
+    // If already on the page, scroll to top with smooth animation
+    const scrollSmoothly = () => {
+      const start = window.pageYOffset;
+      const end = 0;
+      const duration = 400; // Duration for smooth scroll (increase for slower scroll)
+      const startTime = performance.now();
+
+      const scrollAnimation = (currentTime) => {
+        const timeElapsed = currentTime - startTime;
+        const run = Math.min(timeElapsed / duration, 1); // Normalize time to 1
+        const scrollPosition = start + (end - start) * run;
+        
+        window.scrollTo(0, scrollPosition);
+
+        if (timeElapsed < duration) {
+          requestAnimationFrame(scrollAnimation); // Continue animating
+        }
+      };
+
+      requestAnimationFrame(scrollAnimation); // Start animation
+    };
+
+    scrollSmoothly(); // Call the function to scroll smoothly to the top
+  }
+};
+
+
 const Footer = () => {
   return (
     <>
@@ -15,7 +46,8 @@ const Footer = () => {
               className={`row ${styles.footerContainer} d-flex justify-content-center align-items-start`}
             >
               <div className={`col-lg-4 col-md-6 ${styles.footerItem}`}>
-                <Link to="/" className="nav-link">
+              
+                <Link to="/" className="nav-link"  onClick={() => handleLinkClick("/")}  >
                   <div className={styles.footerlogo}>
                     <img src={logo} alt="Logo" />
                   </div>

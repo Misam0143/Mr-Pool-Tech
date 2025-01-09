@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Servicemain from "./Components/Servicemain";
 import OurProjects from "./Components/OurProjects";
 import ContactUs from "./Components/Contact";
-import ScrollToTop from "./Components/Scroll"; // Adjust the import path
+import ScrollToTop from "./Components/Scroll"; 
 
 
 import HOME from "./Components/Home";
