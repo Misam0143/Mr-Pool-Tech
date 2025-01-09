@@ -197,6 +197,7 @@ body {
     cursor: pointer;
     background-color: #1a1e2310;
     border: none;
+     
 }
 
 .closeButton:hover {
@@ -222,6 +223,8 @@ body {
     font-family: 'Fjalla One';
     display: none;
     background-color: #2967b3;
+    cursor: pointer;
+
 
 }
 
